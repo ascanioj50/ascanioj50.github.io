@@ -248,23 +248,17 @@ footer {
   padding-top: 60%;
 }
 
-.coffee-logo {
-  background: url('http://zcole.me/img/coffee-finder-logo.jpg');
-  padding-top: 66.4151%;
-}
 
-.lyft-blog-computer {
-  background: url('http://zcole.me/img/lyft-blog-computer.jpg');
-  padding-top: 60%;
-}
+
+
 
 .nievescompute {
-  background: url('/img/nievescompute.jpg');
+  background: url('/img/nievescompute.png');
   padding-top: 60%;
 }
 
 .simple-grid-computer {
-  background: url('/img/simple-rawr-computer.jpg');
+  background: url('/img/simple-rawr-computer.png');
   padding-top: 60%;
 }
 
