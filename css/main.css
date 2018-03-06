@@ -2,6 +2,13 @@
 
 @import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600|Work+Sans:200,300,400,600,700);
 
+@font-face {
+    font-family: Helvetica1;
+    src: url(/fonts/Helvetica1.woff) format("woff");
+    font-weight: 500;
+    font-style: normal
+}
+
 /* UNIVERSAL */
 
 html,
@@ -15,7 +22,7 @@ body {
 }
 
 * {
-  font-family: 'Work Sans', 'Proxima Nova', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Helvetica1', 'Proxima Nova', 'Helvetica Neue', Helvetica, sans-serif;
   color: #333447;
   line-height: 1.5;
 }
@@ -23,7 +30,7 @@ body {
 /* TYPOGRAPHY */
 
 h1 {
-  font-family: 'Source Serif Pro', Georgia, serif;
+  font-family: 'Helvetica1', Georgia, serif;
   font-size: 3rem;
   font-weight: 600;
 }
