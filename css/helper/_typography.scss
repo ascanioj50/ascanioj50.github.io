@@ -1,0 +1,225 @@
+h1 {
+  font-family: $font-family--serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  color: $color--typography;
+}
+
+h2 {
+  font-family: $font-family--serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  color: $color--typography;
+  margin: 0;
+  &.headline--small {
+    font-family: $font-family--regular;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    line-height: 18px;
+    //font-weight: 400;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+h3 {
+  font-family: $font-family--serif;
+  font-size: 83px;
+  font-weight: 500;
+  line-height: 99px;
+  color: $color--typography;
+}
+h4 {
+
+}
+
+h5 {
+  font-family: $font-family--regular;
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  color: $color--typography;
+  line-height: 18px;
+  font-weight: 300;
+
+  &.number {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+h6, .social-link {
+  font-family: $font-family--regular;
+  font-size: 14px;
+  color: $color--typography;
+  font-weight: 300;
+  &.table-entry {
+    font-size: 14px;
+  }
+}
+p {
+  font-family: $font-family--serif;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 18px;
+  margin: 30px 0;
+  // letter-spacing: 2.5px;
+  color: $color--typography;
+}
+a, .submit-button, .cc-message, .cc-banner .cc-btn {
+  font-family: $font-family--regular;
+  font-size: 12px;
+  color: $color--typography;
+  text-decoration: none;
+  opacity: 1;
+  span {
+    font-size: 12px;
+  }
+  transition: opacity .8s ease-in;
+}
+
+.start-project-cta:hover , a:hover, submit-button:hover {
+  transition: opacity .8s ease-out;
+  opacity: 0.4;
+}
+a.no-link {
+  cursor: default;
+  &:hover {opacity: 1 }
+}
+
+span {
+  font-family: $font-family--regular;
+  font-size: 16px;
+  color: $color--typography;
+}
+
+figcaption {
+  color: $color--typography;
+  font-size: 12px;
+  font-family: $font-family--regular;
+}
+
+
+
+// @media only screen and (min-width: 768px) {
+//   h1 {
+//     font-size: 58px;
+//     line-height: 69px;
+//   }
+//   h2 {
+//     font-size: 46px;
+//     font-weight: 500;
+//     line-height: 54px;
+//     &.headline--small {
+//       font-size: 16px;
+//       line-height: 24px;
+//     }
+//   }
+//   h5 {
+//     font-size: 14px;
+//     &.number {
+//       font-size: 12px;
+//     }
+//   }
+//   h6 {
+//     font-size: 18px;
+//   }
+//   p {
+//     font-size: 24px;
+//     line-height: 32xp;
+//   }
+//   a {
+//     font-size: 14px;
+//     span {
+//       font-size: 14px;
+//     }
+//   }
+//   figcaption {
+//     font-size: 14px;
+//   }
+// }
+
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 65px;
+    line-height: 83px;
+  }
+  h2 {
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 54px;
+    &.headline--small {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  h5 {
+    font-size: 14px;
+    &.number {
+      font-size: 12px;
+    }
+  }
+  h6 {
+    //font-size: 16px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  a, .submit-button, .cc-message, .cc-banner .cc-btn {
+    font-size: 14px;
+    span {
+      font-size: 14px;
+    }
+  }
+  figcaption {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+// @media only screen and (min-width: 1920px) {
+//   h1 {
+//     font-size: 93px;
+//     line-height: 105px;
+//   }
+//   h2 {
+//     font-size: 65px;
+//     //ont-weight: 500;
+//     line-height: 72px;
+//     &.headline--small {
+//       font-size: 14px;
+//       line-height: 18px;
+//     }
+//   }
+//   h5 {
+//     font-size: 14px;
+//     &.number {
+//       font-size: 12px;
+//     }
+//   }
+//   h6, .social-link {
+//     font-size: 18px;
+//   }
+//   p {
+//     font-size: 32px;
+//     line-height: 48px;
+//   }
+//   a, .submit-button{
+//     font-size: 16px;
+//     span {
+//       font-size: 16px;
+//     }
+//   }
+//   figcaption {
+//     font-size: 14px;
+//   }
+// }

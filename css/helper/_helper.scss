@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'functions';
+@import 'typography';
+
+.col--1 {
+  margin-left: calc()
+
+}
+
+.col--2 {
+  margin-left: calc( (100vw / 18 + 24) * 1 );
+}
+
+.col--3 {
+  margin-left: calc( (100vw / 18 + 24) * 2 );
+}

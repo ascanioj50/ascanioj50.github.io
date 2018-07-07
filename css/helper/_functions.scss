@@ -1,0 +1,60 @@
+/*=============================================>>>>>
+= functions.scss - sass functions, mixins & placeholder=
+===============================================>>>>>*/
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Calculate rem & em values
+@function rem($target, $context : $font-size--base) {
+  @return ($target / $context) * 1rem ;
+}
+
+@function em($target, $context : $font-size--base) {
+  @return ($target / $context) * 1em ;
+}
+
+// Calculate line height
+@function lineHeight($line-height, $font-size: $font-size--base) {
+  @return ($line-height / $font-size) ;
+}
+
+
+// Media Querie mixin
+@mixin respond-to($breakpoint){
+	@if map-has-key($breakpoints, $breakpoint){
+		@media (min-width: #{ map-get($breakpoints, $breakpoint) } ){
+			@content;
+		}
+	}@else {
+		@warn 'No breakpoint with this name specified';
+	}
+}
+
+
+// Font Size Mixin
+@mixin font-size($font-size, $fontSizeMap: $fontSizes){
+	@if map-has-key($fontSizeMap, $font-size){
+		font-size : #{map-get($fontSizes, $font-size)};
+	}@else {
+		@warn 'Value not found';
+	}
+}
+
+// Color mixin
+@mixin color($color,  $background : false ,$colorsMap: $colors){
+	@if map-has-key($colorsMap, $color){
+		@if $background {
+			background: #{map-get($colorsMap, $color)};
+		}@else {
+			color: #{map-get($colorsMap, $color)};
+		}
+	}@else {
+		@warn 'Color not found';
+	}
+}
